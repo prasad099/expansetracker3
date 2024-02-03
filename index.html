@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
-    
+    <title>Expense tracker Myself</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="main-container">
+        <div class="inc-exp-btn">
+          <div>
+            <button class="income" onclick="income()">Income</button>
+          </div>
+          <div>
+            <button  class="expense" onclick="expense()">Expense</button>
+          </div>
+        </div>
+        <div class="bal-exp-inc">
+          <div class="inputbox">
+            <h3>Balance</h3>
+            <input type="text"  value="&#8377 000" id="balance" readonly>
+          </div>
+          <div class="inputbox">
+            <h3>Expenses</h3>
+            <input type="text"  value="&#8377 000" id="expense" readonly>
+          </div>
+          <div class="inputbox">
+            <h3>Income</h3>
+            <input type="text" value="&#8377 000" id="income" readonly>
+          </div>
+        </div>
+        <div>
+          <table class="trans-table" id="transactionTable">
+            <tr>
+              <th id="title">Title</th>
+              <th id="amount">Amount</th>
+            </tr>
+            <tr>
+              <td>
+                <input id="myText" type="text" placeholder="Enter Title">
+              </td>
+              <td>
+                <input id="number" type="number" placeholder="Enter Amount">
+              </td>
+            </tr>
+          </table>
+          <button class="field" onclick="addData()">Add Fields</button>
+        </div>
+        <div class="History">
+          <h3>Transactions...</h3>
+        </div>
+        <table class="history-table">
+         
+        </table>
+
+        <button class="clr-btn">Clear</button>
+      </div>
+  
+  
+    <script src="js/index.js">
+        
+    </script>
 </body>
 </html>
